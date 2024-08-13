@@ -1,4 +1,4 @@
-import { IAsyncQueueTask } from "../IAsyncQueueTask"
+import { IAsyncQueueTask } from "./IAsyncQueueTask"
 
 export interface IAsyncQueueRunningTask {
     processId: string

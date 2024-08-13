@@ -1,4 +1,4 @@
-import { TAsyncQueueTaskEventHandlers } from "../TAsyncQueueTaskEventHandlers"
+import { TAsyncQueueTaskEventHandlers } from "./TAsyncQueueTaskEventHandlers"
 
 export type TAsyncQueueTaskHandler = (
     controller: AbortController,
