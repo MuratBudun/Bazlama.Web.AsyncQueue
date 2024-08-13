@@ -3,14 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest --coverage=true"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-html-reporter": "^3.10.2",
     "msw": "^2.3.5",
+    "node-fetch": "^2.7.0",
+    "ts-jest": "^29.2.4",
     "typescript": "^5.5.3",
     "vite": "^5.4.0"
   },
@@ -18,5 +28,8 @@
     "workerDirectory": [
       "public"
     ]
+  },
+  "dependencies": {
+    "undici": "^6.19.7"
   }
 }

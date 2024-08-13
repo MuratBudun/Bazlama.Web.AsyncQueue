@@ -7,7 +7,7 @@ import { setupWorker } from 'msw/browser'
 import { endpointHandlers } from './mocks/endpoints'
 
 const worker = setupWorker(...endpointHandlers)
-await worker.start()
+worker.start()
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
